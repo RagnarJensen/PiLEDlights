@@ -1,4 +1,4 @@
-/ **************************************************************************
+/**************************************************************************
  *
  * A disk activity light for the Raspberry Pi, using an LED connected to a GPIO pin.
  * Based on hddled.c - http://members.optusnet.com.au/foonly/whirlpool/code/hddled.c -
