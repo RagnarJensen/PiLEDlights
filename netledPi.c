@@ -43,7 +43,7 @@
  *                             ===
  *                            Ground
  *
- * Default LED Pin - wiringPi pin 11 is BCM_GPIO 7, physical pin 25 on the Pi's P1 header.
+ * Default LED Pin - wiringPi pin 11 is BCM_GPIO 7, physical pin 26 on the Pi's P1 header.
  * Note: This pin is also used for the SPI interface. If you have SPI add-ons connected,
  * you'll have to use the -p option to change it to another, unused pin.
  */
