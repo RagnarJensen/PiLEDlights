@@ -7,7 +7,7 @@ netledPi and hddledPi make use of Gordon Henderson's wiringPi library - wiringpi
 
 Building the programs is easy:  
 gcc -Wall -O3 -o netledPi netledPi.c -lwiringPi  
-gcc -Wall -O3 -o hddledPi hddledPi.c -lwiringPi
+gcc -Wall -O3 -o hddledPi hddledPi.c -lwiringPi  
 gcc -Wall -O3 -o actledPi actledPi.c
 
 hddledPi uses wiringPi pin 10 by default. It is BCM_GPIO 8, physical pin 24 on the Pi's P1 header.  
@@ -19,9 +19,9 @@ Options for netledPi and hddledPi:
  -p, --pin=VALUE            GPIO pin (using wiringPi numbering scheme) where LED is connected  
  -r, --refresh=VALUE        Refresh interval (default: 20 ms)  
  
- Options for actledPi:
- -d, --detach               Detach from terminal (become a daemon)
- -r, --refresh=VALUE        Refresh interval (default: 20 ms)
+ Options for actledPi:  
+ -d, --detach               Detach from terminal (become a daemon)  
+ -r, --refresh=VALUE        Refresh interval (default: 20 ms)  
  
  netledPi and hddledPi need super-user privileges, so you have to start them with "sudo", e.g.  
  sudo netledPi -d -p 29
