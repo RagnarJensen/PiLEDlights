@@ -21,3 +21,4 @@ Options:
  The programs need super-user privileges, so you have to start them with "sudo", e.g.  
  sudo netledPi -d -p 29
  
+ I have only tested them with Raspbian.
