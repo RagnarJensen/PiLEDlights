@@ -1,0 +1,14 @@
+Init scripts - to make the programs start automatically at boot.  
+
+If you are running a current Raspbian (Jessie) with systemd:  
+Copy the systemd/*.service files to the /etc/systemd/system/ directory, and then run  
+sudo systemctl daemon-reload  
+sudo systemctl enable hddledPi.service  
+sudo systemctl enable netledPi.service  
+
+If you are running an older Raspbian (Wheezy) with SysV init:  
+Copy the sysVinit/* files to the /etc/init.d/ directory, and then run  
+sudo update-rc.d enable hddledPi  
+sudo update-rc.d enable netledPi  
+
+
