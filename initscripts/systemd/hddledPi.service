@@ -1,0 +1,9 @@
+[Unit]
+Description=hddledPi mass storage activity indicator
+
+[Service]
+Type=forking
+ExecStart=/usr/local/bin/hddledPi -d
+
+[Install]
+WantedBy=basic.target
