@@ -5,12 +5,14 @@ hddledPi blinks a LED connected to a GPIO pin on any mass storage access. Not on
 netledPi blinks a LED connected to a GPIO pin when there is activity on any network interface. Not only the built-in ethernet interface, but also on any other USB ethernet or WiFi interface.  
 actledPi blinks the Pi's ACT led on all mass storage I/O, i.e. not only the SD card.
 
-netledPi and hddledPi make use of Gordon Henderson's wiringPi library - wiringpi.com - so you have to have that installed in order to build the programs.  
+netledPi and hddledPi make use of Gordon Henderson's wiringPi library - wiringpi.com - so you have to have that installed in order to build the programs. Current versions of Raspbian come with wiringPi already installed.  
 
 Building the programs is easy:  
 gcc -Wall -O3 -o netledPi netledPi.c -lwiringPi  
 gcc -Wall -O3 -o hddledPi hddledPi.c -lwiringPi  
 gcc -Wall -O3 -o actledPi actledPi.c
+
+I recommend that you copy the binaries to the /usr/local/bin directory, because the init scripts provided all assume that they reside there.
 
 hddledPi uses wiringPi pin 10 by default. It is BCM_GPIO 8, physical pin 24 on the Pi's P1 header.  
 netledPi uses wiringPi pin 11 by default. It is BCM_GPIO 7, physical pin 25 on the Pi's P1 header.  
