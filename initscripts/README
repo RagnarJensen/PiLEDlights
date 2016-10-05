@@ -12,3 +12,4 @@ sudo update-rc.d enable hddledPi
 sudo update-rc.d enable netledPi  
 
 
+Creating init scripts for actledPi is left as an exercise for the reader ;-)
