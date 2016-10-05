@@ -1,0 +1,10 @@
+[Unit]
+Description=netledPi network activity indicator
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/bin/netledPi -d
+
+[Install]
+WantedBy=default.target
