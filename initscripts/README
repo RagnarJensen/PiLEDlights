@@ -1,6 +1,6 @@
 Init scripts - to make the programs start automatically at boot.  
 
-If you are running a current Raspbian (Jessie) with systemd:  
+If you are running a current Raspbian (Jessie or later) with systemd:  
 Copy the systemd/*.service files to the /etc/systemd/system/ directory, and then run  
 sudo systemctl daemon-reload  
 sudo systemctl enable hddledPi.service  
