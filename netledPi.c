@@ -80,7 +80,7 @@ int activity(FILE *netdevices) {
         int found_inpackets, found_outpackets;
         int result;
         char *ptr;
-        char device[8];
+        char device[32];
 
         /* Go to the beginning of the netdevices file */
         result = TEMP_FAILURE_RETRY(fseek(netdevices, 0L, SEEK_SET));
