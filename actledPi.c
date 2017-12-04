@@ -119,12 +119,12 @@ void led(int on) {
         if (current == on)
                 return;
 
-                if (on) {
-                        fputs("255\n", actled);
-                } else {
-                        fputs("0\n", actled);
-                }
-                fflush(actled);
+        if (on) {
+                fputs("255\n", actled);
+        } else {
+                fputs("0\n", actled);
+        }
+        fflush(actled);
         current = on;
 }
 
