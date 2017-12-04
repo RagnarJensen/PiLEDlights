@@ -132,11 +132,11 @@ void led(int on) {
         if (current == on)
                 return;
 
-                if (on) {
-                        digitalWrite (o_gpiopin, HIGH);
-                } else {
-                        digitalWrite (o_gpiopin, LOW);
-                }
+        if (on) {
+                digitalWrite (o_gpiopin, HIGH);
+        } else {
+                digitalWrite (o_gpiopin, LOW);
+        }
 
         current = on;
 }
