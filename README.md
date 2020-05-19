@@ -6,6 +6,7 @@ netledPi blinks a LED connected to a GPIO pin when there is activity on any netw
 actledPi blinks the Pi's ACT led on all mass storage I/O, i.e. not only the SD card.
 
 netledPi and hddledPi make use of Gordon Henderson's wiringPi library - wiringpi.com - so you have to have that installed in order to build the programs. Current versions of Raspbian come with wiringPi already installed.  
+EDIT 2020-05-19: It seems like the Pi 4B needs WiringPi 2.52. At the time of writing this, Raspbian comes with 2.50, i.e. you'll have to update WiringPi if you are on a Pi 4B. http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/
 
 Building the programs is easy:  
 gcc -Wall -O3 -o netledPi netledPi.c -lwiringPi  
