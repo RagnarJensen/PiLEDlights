@@ -31,4 +31,9 @@ Options for netledPi and hddledPi:
  netledPi and hddledPi need super-user privileges, so you have to start them with "sudo", e.g.  
  sudo netledPi -d -p 29
  
+ If you want to start the program at startup, go into the file /etc/rc.local (sudo nano /etc/rc.local) and add the folowing lines (assuming the compiled script is located in /usr/local/bin/):
+ sudo /usr/local/bin/netledPi -d
+ sudo /usr/local/bin/hddledPi -d
+
+ 
  I have only tested the programs on Raspbian.
