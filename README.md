@@ -13,7 +13,8 @@ gcc -Wall -O3 -o netledPi netledPi.c -lwiringPi
 gcc -Wall -O3 -o hddledPi hddledPi.c -lwiringPi  
 gcc -Wall -O3 -o actledPi actledPi.c
 
-I recommend that you copy the binaries to the /usr/local/bin directory, because the init scripts provided all assume that they reside there.
+I recommend that you copy the binaries to the /usr/local/bin directory, because the init scripts provided all assume that they reside there. Note: On Raspbian-Lite based systems you may have to install WiringPi manually:
+sudo apt-get install wiringpi
 
 hddledPi uses wiringPi pin 10 by default. It is BCM_GPIO 8, physical pin 24 on the Pi's P1 header.  
 netledPi uses wiringPi pin 11 by default. It is BCM_GPIO 7, physical pin 25 on the Pi's P1 header.  
