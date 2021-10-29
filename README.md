@@ -17,7 +17,7 @@ I recommend that you copy the binaries to the /usr/local/bin directory, because 
 sudo apt-get install wiringpi
 
 hddledPi uses wiringPi pin 10 by default. It is BCM_GPIO 8, physical pin 24 on the Pi's P1 header.  
-netledPi uses wiringPi pin 11 by default. It is BCM_GPIO 7, physical pin 25 on the Pi's P1 header.  
+netledPi uses wiringPi pin 11 by default. It is BCM_GPIO 7, physical pin 26 on the Pi's P1 header.  
 Note: These pins are also used for the SPI interface. If you have SPI add-ons connected, you'll have to use the -p option to change to another, unused pin.
 
 Options for netledPi and hddledPi:  
